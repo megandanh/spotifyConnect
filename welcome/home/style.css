@@ -11,7 +11,7 @@ body {
     padding: 0;
     background-color: #EBD7FF;
 }
-.player image {
+.player {
     position: relative;
     top: -150px;
     height: 465px;
@@ -20,9 +20,34 @@ body {
     border: black;
     border-width: 2px;
     border-color: black;
-    margin: 200px auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
     text-align: center;
 }
+.song{
+    position: relative;
+    top: -300px;
+    align-items: center;
+    height: 100px;
+    width: 738px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 175px;
+    text-align: center;
+
+}
+
+.elements.next{
+
+
+}
+
+.elements.previous{
+
+}
+
 .button {
     display: inline-block;
     padding: 10px 20px;
