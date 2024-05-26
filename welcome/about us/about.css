@@ -1,0 +1,50 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EBD7FF;
+}
+
+.banner {
+    background-color: rgb(161, 115, 188);
+    font-size:110%;
+    margin: 0px;
+    width: 100%;
+    padding: 0px ;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    color: white;
+    margin-left: 10px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.buttonSites{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #31243a;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: background-color 0.3s;
+    font-family:'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: large;
+}
+
+.button:hover {
+    background-color: #705189;
+}
