@@ -70,38 +70,97 @@ body {
 }
 
 .row {
+
     /*width: 70%;*/
     /*height: 50px;*/
     /*background-color: #fb7185;*/
-    padding: 10px;
-    margin: auto;
-    border-radius: 10px;
+    /*padding: 10px;*/
+   /* margin: auto;*/
+    margin-left: 30px;
+    /*border-radius: 10px;*/
 }
 
+/* SLIDESHOW SECTION */
 .slideshow {
     width: 650px;
     height: 375px;
+    position: relative;
     padding: 10px;
     border: 10px;
+    border-radius: 20px;
     margin-top: 20px;
     background-color:rgb(65, 6, 99);
 }
 
-.row1 {
-    width: 650px;
-    height: 25px;
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+
+    -ms-overflow-style: none; /* hiding scrollbar */
+    scrollbar-width: none;
+}
+ /* additional hiding scrollbar for other browsers */
+.slider::-webkit-scrollbar {
+    display: none;
 }
 
-.row1.songtitle {
-    width: 200px;
-    height: 50px;
-    background-color: blue;
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+/* ADDITIONAL PLAYER ELEMENTS SECTION */
+.row1 {
+    width: 650px;
+    /*height: 25px;*/
+    height: auto;
+    margin: auto;
+    display: flex;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /*justify-content: space-around;*/
+    column-gap: 450px;
+}
+.row1.feature {
+    display: flex;
+    margin: auto;
+    margin-top: 0;
+    
 }
 
 .row1 .heart {
-    width: 70px;
-    height: 50px;
-    margin: auto;
+    width: 50px;
+    height: 30px;
+    align-self: center;
 }
 
 .row2 {
@@ -109,6 +168,7 @@ body {
     height: 10px;
     display: flex;
     margin-top: 1px;
+    padding: 10px;
 }
 
 .row2 .song {
@@ -120,11 +180,19 @@ body {
 .row3 {
     width: 600px;
     height: 35px;
+    padding: 5px;
     display: flex;
     margin-top: 1px;
     justify-content: space-evenly;
 }
 
+.prev {
+
+}
+
+.next {
+    
+}
 /*INFO SECTION*/
 .info {
     width: 50%;
