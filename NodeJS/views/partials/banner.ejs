@@ -1,14 +1,13 @@
+
 <div class="banner">
     <header class="title">
-        <h2>Intertune</h2>
+      <h2><a href="/" class="title">Intertune</a></h2>
     </header>
     <nav>
-      <a href="about" class="buttonSites">About Us</a>
-      <a href="how-it-works.html" class="buttonSites">How It Works</a>
+      <a href="/about" class="buttonSites ">About Us</a>
+      <a href="/howitworks" class="buttonSites">How It Works</a>
       <button id="showLogin" class="button">Login</button>
-      
-      <%- include('../partials/login.ejs') %>
-      
-      <button id="showLogin" class="button">Sign Up</button>
+      <button id="showSignUp" class="button">Sign Up</button>
     </nav>
 </div>
+<%- include('../partials/login.ejs') %>

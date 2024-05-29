@@ -8,19 +8,19 @@ body {
   /* MUSIC PLAYER */
 
   .player {
-    height: 800px;
-    width: 700px;
+    height: 700px;
+    width: 600px;
     /*background-color: rgb(225, 202, 226);*/
     /*border: 1px solid black;*/
     border-width: 2px;
     margin: 100px auto;
-    margin-top: 100px;
+    margin-top: 60px;
     margin-bottom: 0;
   }
 
   /* slideshow */
   .slideshow {
-    height: 500px;
+    height: 400px;
     width: 600px;
     background-color: rgb(191, 150, 219);
     margin: 30px auto;
@@ -57,7 +57,7 @@ body {
   }
   .getStarted{
     width: 50%;
-    margin-left: 5%;
+    margin-left: 0;
     text-align: left;
     font-size: small;
   }
@@ -79,7 +79,7 @@ body {
     font-style: italic;
   }
   .favorite{
-    margin-left:15%;
+    margin-left:20%;
   }
   .favorite-icon{
     margin-top: 5px;
@@ -89,6 +89,7 @@ body {
 
   .progressBar{
     position: relative;
+    margin-bottom: 10px;
   }
   .line{
     margin-top: 0;
@@ -110,11 +111,11 @@ body {
   .iconsSplit{
     width: 600px;
     margin: 30px auto;
-    margin-top: 10px;
+    margin-top: 20px;
     display:flexbox;
   }
   .icon{
-    margin-left: 20%;
+    margin-left: 16%;
     width: 30px;
     height: auto;
   }
@@ -124,39 +125,25 @@ body {
     width: 38px;
   }
   .back-icon{
-    margin-left: 25%;
+    margin-left: 16%;
+  }
+  .play-icon:hover{
+    transform: scale(1.3);
+    transition-duration: 100ms;
+    cursor: pointer;
+  }
+  .back-icon:hover{
+    transform: scale(1.3);
+    transition-duration: 100ms;
+    cursor: pointer;
+  }
+  .forward-icon:hover{
+    transform: scale(1.3);
+    transition-duration: 100ms;
+    cursor: pointer;
   }
 
-  /*  play icon  */
-  .play-icon{
-      margin-left: 357px;
-      margin-top: 20px;
-      width: 0; 
-      height: 0; 
-      border-top: 13px solid transparent;
-      border-bottom: 13px solid transparent;
-      border-left: 18px solid rgb(0, 0, 0);
-      position: absolute;
-      display:inline;
-  }
-  .playCircle{
-    margin-left: 345px;
-    margin-top: 15px;
-    height: 35px;
-    width: 35px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    position: absolute;
-    display:inline;
-  }
-  .play-icon:hover {
-    background-color: #ffffff;
-    transition: background-color 0.3s;
-  }
-  .playCircle:hover {
-    background-color: #000000;
-    transition: background-color 0.3s;
-  }
+
 
   /* TOP BANNER */
 
@@ -192,7 +179,7 @@ body {
                 opacity 200ms ease-in-out 0ms,
                 transform 20ms eas 0ms;
   }
-  .loginPopup .active{
+  .loginPopup.active{
     top:50%;
     opacity:1;
     transform: translate(-50%,-50%) scale(1);
@@ -272,6 +259,7 @@ body {
       color: white;
       margin-left: 10px;
       font-style: italic;
+      text-decoration: none;
   }
   .banner {
       background-color: rgb(161, 115, 188);

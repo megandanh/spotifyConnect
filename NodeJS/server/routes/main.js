@@ -3,17 +3,29 @@ const router = express.Router();
 
 
 // Routes
-router.get('', (req, res) =>{
+router.get('/', (req, res) =>{
     const locals = {
-        title: "NodeJS",
+        title: "Intertune",
         description: "simple website creaded with nodejs, express, and mongodb"
     }
 
-    res.render('index', {locals});
+    res.render('layouts/main', {locals});
 });
 
 router.get('/about', (req, res) =>{
-    res.render('about');
+    const locals = {
+        title: "About Us",
+        description: "Learn more about Intertune"
+    }
+    res.render('layouts/about', { locals });
+});
+
+router.get('/howitworks', (req, res) =>{
+    const locals = {
+        title: "How It Works",
+        description: "Understand how Intertune works"
+    }
+    res.render('layouts/howitworks', { locals });
 });
 
 module.exports = router;
