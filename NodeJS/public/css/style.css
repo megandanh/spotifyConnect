@@ -166,8 +166,9 @@ body {
 
   .loginPopup{
     position: absolute;
+    margin-top: -48%;
     opacity: 0;
-    top: 50%;
+    top: 0;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 400px;
@@ -180,7 +181,7 @@ body {
                 transform 20ms eas 0ms;
   }
   .loginPopup.active{
-    top:50%;
+    top:0;
     opacity:1;
     transform: translate(-50%,-50%) scale(1);
     transition: top 0ms ease-in-out 0ms,
